@@ -1,0 +1,109 @@
+# ClanSystem Configuration
+
+clan:
+  # Настройки создания
+  creation-cost: 16
+  max-name-length: 16
+  max-tag-length: 6
+
+  # Территории
+  claim-cost: 8
+  max-claims-base: 3
+
+  # Система опыта
+  exp-multiplier: 1.0
+
+  # Настройки чата
+  show-tag-in-chat: true
+  notify-join-leave: true
+
+  # Дружественный огонь
+  allow-friendly-fire: false
+
+  # Сохранение
+  auto-save-interval: 300
+
+messages:
+  # Основные
+  prefix: "&8[&6Кланы&8]"
+
+  # Успешные операции
+  clan.created: "&aКлан {name} [{tag}] успешно создан за {cost} алмазов!"
+  clan.disbanded: "&cКлан распущен!"
+  clan.joined: "&aВы вступили в клан {name}!"
+  clan.left: "&aВы покинули клан {name}!"
+
+  # Банк
+  bank.deposited: "&aВы внесли {amount} алмазов в банк клана!"
+  bank.withdrawn: "&aВы сняли {amount} алмазов из банка!"
+
+  # Улучшения
+  upgrade.purchased: "&aУлучшение {upgrade} повышено до уровня {level} за {cost} алмазов!"
+
+  # Территории
+  claim.created: "&aТерритория создана за {cost} алмазов!"
+  claim.removed: "&cТерритория удалена!"
+
+  # Дом
+  home.set: "&aДом клана установлен!"
+  home.teleported: "&aВы телепортированы к дому клана!"
+
+  # Участники
+  member.promoted: "&aИгрок {player} повышен до {rank}!"
+  member.demoted: "&aИгрок {player} понижен до {rank}!"
+  member.kicked: "&cИгрок {player} исключен из клана!"
+
+  # Ошибки
+  error.not-in-clan: "&cВы не состоите в клане!"
+  error.already-in-clan: "&cВы уже состоите в клане!"
+  error.clan-not-found: "&cКлан не найден!"
+  error.name-too-long: "&cСлишком длинное название клана!"
+  error.tag-too-long: "&cСлишком длинный тег клана!"
+  error.clan-name-exists: "&cКлан с таким названием уже существует!"
+  error.clan-tag-exists: "&cКлан с таким тегом уже существует!"
+  error.not-enough-diamonds: "&cНедостаточно алмазов! Нужно: {amount}"
+  error.player-offline: "&cИгрок не в сети!"
+  error.no-permission: "&cУ вас нет прав на это действие!"
+  error.clan-full: "&cКлан заполнен!"
+  error.player-not-in-clan: "&cИгрок не состоит в вашем клане!"
+  error.cant-modify-higher-rank: "&cВы не можете изменять игроков с равным или выше рангом!"
+  error.not-enough-clan-diamonds: "&cВ банке клана недостаточно алмазов!"
+  error.max-claims-reached: "&cДостигнут лимит территорий!"
+  error.chunk-already-claimed: "&cЭта территория уже занята!"
+  error.no-claim-here: "&cЗдесь нет вашей территории!"
+  error.no-home-set: "&cДом клана не установлен!"
+  error.friendly-fire: "&cНельзя атаковать участников своего клана!"
+  error.invalid-amount: "&cВведите корректное число!"
+  error.invalid-upgrade: "&cНеизвестное улучшение!"
+  error.max-rank: "&cИгрок уже имеет максимальный ранг!"
+  error.min-rank: "&cИгрок уже имеет минимальный ранг!"
+  error.description-too-long: "&cСлишком длинное описание!"
+  error.unknown-command: "&cНеизвестная команда! Используйте /clan help"
+
+  # Использование команд
+  clan.create-usage: "&cИспользуйте: /clan create <название> <тег>"
+  clan.invite-usage: "&cИспользуйте: /clan invite <игрок>"
+  clan.kick-usage: "&cИспользуйте: /clan kick <игрок>"
+  clan.description-usage: "&cИспользуйте: /clan description <текст>"
+  clan.join-usage: "&cИспользуйте: /clan join <название/тег>"
+  clan.leave-confirm: "&cИспользуйте /clan leave для подтверждения"
+  bank.deposit-usage: "&cИспользуйте: /clan deposit <количество>"
+  bank.withdraw-usage: "&cИспользуйте: /clan withdraw <количество>"
+  upgrade.usage: "&cИспользуйте: /clan upgrade <тип>"
+  member.promote-usage: "&cИспользуйте: /clan promote <игрок>"
+  member.demote-usage: "&cИспользуйте: /clan demote <игрок>"
+
+  # Чат
+  chat.format: "&8[&6Клан&8] {rank} &7{player}: &f{message}"
+  chat.enabled: "&aРежим кланового чата включен!"
+  chat.disabled: "&cРежим кланового чата выключен!"
+  chat.toggle-usage: "&7Используйте /clan chat <сообщение> для отправки в клановый чат"
+
+  # Приглашения
+  invite.received: "&aВы получили приглашение в клан {clan} от {player}!"
+  invite.sent: "&aПриглашение отправлено игроку {player}!"
+
+  # Для участников
+  member.you-promoted: "&aВы повышены до {rank}!"
+  member.you-demoted: "&cВы понижены до {rank}!"
+  member.you-kicked: "&cВы исключены из клана!"

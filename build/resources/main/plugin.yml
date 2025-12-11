@@ -1,0 +1,29 @@
+name: ClanSystem
+version: 1.0.0
+main: net.mrforey.ClanSystem
+api-version: '1.21'
+author: MrForey
+description: Advanced clan system with diamond economy
+
+permissions:
+  mrforey.*:
+    description: Gives access to all ClanSystem commands
+    default: op
+    children:
+      mrforey.create: true
+      mrforey.admin: true
+
+  mrforey.create:
+    description: Allows creating clans
+    default: true
+
+  mrforey.admin:
+    description: Allows admin commands
+    default: op
+
+commands:
+  clan:
+    description: Main clan command
+    usage: /<command> [subcommand]
+    aliases: [c, клан]
+    permission: mrforey.create
